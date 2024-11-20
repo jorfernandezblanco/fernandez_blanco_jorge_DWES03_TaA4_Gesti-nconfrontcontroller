@@ -5,14 +5,14 @@ La estructura está diseñada para facilitar el desarrollo modular, escalable y 
 
 ## Estructura de Carpetas
 
-- **app/controllers**: Controladores que gestionan la lógica de negocio.
-- **app/models**: Modelos para la gestión de datos.
-- **app/views**: Vistas para la interfaz de usuario.
-- **app/core**: Clases base y núcleo de la aplicación.
-- **public**: Archivos accesibles desde el navegador (CSS, JS, imágenes).
-- **config**: Archivos de configuración (credenciales de base de datos, etc.).
+app/controllers: Contendrá archivos PHP que manejan las acciones de las solicitudes (por ejemplo, UserController.php).
+app/models: Representará entidades de datos como User.php o Product.php.
+app/views: Archivos HTML o PHP para mostrar contenido al usuario.
+app/core: Contendrá clases como un Router.php para gestionar rutas y un BaseController.php como controlador padre.
+public: Incluye index.php como punto de entrada y recursos públicos (CSS, JS).
+config: Configuraciones como las de base de datos en config.php.
 - **vendor**: Dependencias instaladas mediante Composer.
-- **logs (opcional)**: Registro de eventos y errores.
+- **logs**: Registro de eventos y errores.
 
 ## Configuración
 - Instalar dependencias con `composer install`.
